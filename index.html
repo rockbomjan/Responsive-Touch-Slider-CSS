@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Touch Slider</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="images/pic1.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h3>The moon crater <br> <span> South Pole</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h3>The alien world <br> <span> Aliens</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="images/pic3.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h3>The aliens world <br> <span> Aliens House</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="images/pic4.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h3>The Cowboy <br> <span> Bounty Hunter</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="images/pic5.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h3>The morning dawn <br> <span> Sunrise</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="images/pic6.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h3>The grazing field <br> <span> Cattle</span></h3>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <script src="swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50, //lower value reduces the rotation angle
+                stretch: 0,
+                depth: 500, //increasing and decreasing value affects the 3D effect
+                modifier: 1,//increasing value lines up the images at the center
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+
+</body>
+
+</html>
